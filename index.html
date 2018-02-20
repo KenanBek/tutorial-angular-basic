@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="angular.js"></script>
+</head>
+
+<body ng-app ng-init="firstName = 'John'; lastName = 'Doe';">
+  <strong>Link:</strong> {{linkUrl}}<br />
+  <strong>Description:</strong> <span ng-bind="linkDesc"></span><br />
+  <br />
+  
+  <div>
+      <label>Link:<label><br>
+      <input type="text" ng-model="linkUrl" value="google.com" />
+  </div>
+  <div>
+      <label>Description:</label><br>
+      <textarea type="text" ng-model="linkDesc" rows="4" cols="50">
+        Search engine
+      </textarea>
+  </div>
+
+</body>
+</html>
